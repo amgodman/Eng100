@@ -9,6 +9,7 @@ vary y = 900*Math.random();
 var ballr = Math.floor(255*x/1600);
 var ballg = Math.floor(255*y/900);
 var ballb = 255;
+var context;
 document.onmousemove=function(e)
 {
   e = e || window.event
@@ -20,10 +21,6 @@ document.onmousemove=function(e)
   newColor = 'rgb(' + red.value + ',' + green.value + ',' + 255 + ')';
   document.body.style.backgroundColor = newColor<!--"rgb(red.value, green.value, 255)"-->;
 }
-</SCRIPT>
-<head>
-<title>Austin Godman </title>
-</head>
 function init()
 {
     context= myCanvas.getContext('2d');
@@ -33,6 +30,10 @@ function init()
     context.arc(x,y,20,0,Math.PI*2,true); context.closePath();
     context.fill();
 }
+</SCRIPT>
+<head>
+<title>Austin Godman </title>
+</head>
 <body onload="init();">
 <canvas id="myCanvas" width="1600", height="900">
   
