@@ -28,7 +28,7 @@ document.onmousemove=function(e)
   e = e || window.event
   document.getElementById('mouseX').value = e.pageX;
   document.getElementById('mouseY').value = e.pageY;
-  document.bgColor= "rgb((255*"mouseX"/1600), (255*"mouseY"/900), 255)";
+  document.bgColor= "rgb((255*'mouseX'/1600), (255*'mouseY'/900), 255)";
 }
 </SCRIPT>
 </html>
