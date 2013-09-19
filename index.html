@@ -10,9 +10,9 @@ document.onmousemove=function(e)
   document.getElementById('mouseX').value = e.pageX;
   document.getElementById('mouseY').value = e.pageY;
   document.getElementById('red').value = Math.floor(255*mouseX.value/1600);
-  document.getElementById('green').value = Math.floor(255*mouseY.value/800);
-  document.getElementById('blue').value = 255;
-  newColor = 'rgb(' + red.value + ',' + green.value + ',' + 255 + ')';
+  document.getElementById('green').value = 255;
+  document.getElementById('blue').value = Math.floor(255*mouseY.value/800);
+  newColor = 'rgb(' + red.value + ',' + green.value + ',' + blue.value + ')';
   document.body.style.backgroundColor = newColor;
 }
 </SCRIPT>
