@@ -4,6 +4,11 @@
 </script>
 <SCRIPT language="JavaScript">
 var newColor;
+var x = 1600*Math.random();
+vary y = 900*Math.random();
+var ballr = Math.floor(255*x/1600);
+var ballg = Math.floor(255*y/900);
+var ballb = 255;
 document.onmousemove=function(e)
 {
   e = e || window.event
@@ -19,7 +24,19 @@ document.onmousemove=function(e)
 <head>
 <title>Austin Godman </title>
 </head>
-<body>
+function init()
+{
+    context= myCanvas.getContext('2d');
+    context.beginPath();
+    context.fillStyle= 'rgb(' + ballr + ',' + ballg + ',' ballb + ')';
+    // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+    context.arc(x,y,20,0,Math.PI*2,true); context.closePath();
+    context.fill();
+}
+<body onload="init();">
+<canvas id="myCanvas" width="1600", height="900">
+  
+</canvas>
 <div class="body-center">
   <span class="navbar">
     <a href="index.html">Home</a>
