@@ -23,21 +23,12 @@
 </ul>
 </body>
 <SCRIPT language="JavaScript">
-<!--document.onmousemove=function(e)
+document.onmousemove=function(e)
 {
   e = e || window.event
   document.getElementById('mouseX').value = e.pageX;
   document.getElementById('mouseY').value = e.pageY;
-  document.bgColor= "rgb((255*'mouseX'/1600), (255*'mouseY'/900), 255)";
-}-->
-var w = Math.round(document.width() / 255);
-var h = Math.round(document.height() / 255);
-
-document.onmousemove=function(e){
-    e = e || window.event
-    var pageX = Math.round(e.pageX / w);
-    var pageY = Math.round(e.pageY / h);
-    document.bgColor = "rgb("+pageX+","+pageY+","+pageX+")";
-};
+  document.bgColor= "rgb((255*(+mouseX+)/1600), (255*(+mouseY+)/900), 255)";
+}
 </SCRIPT>
 </html>
