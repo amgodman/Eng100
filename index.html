@@ -11,7 +11,7 @@ document.onmousemove=function(e)
   document.getElementById('red').value = 255*mouseX.value/1600;
   document.getElementById('green').value = 255*mouseY.value/900;
   document.getElementById('blue').value = 255;
-  document.bgColor= "rgb(Math.round(mouseX.value/6.3), Math.round(mouseY.value/3.53), 255)";
+  document.bgColor= "rgb(red.value, green.value, 255)";
 }
 </SCRIPT>
 <head>
@@ -25,7 +25,7 @@ document.onmousemove=function(e)
 <input type="text" id="mouseY" /><br />
 <input type="text" id="red" /><br />
 <input type="text" id="green" /><br />
-<input type="text" id="document.bgColor.blue" />
+<input type="text" id="blue" />
 </p>
 <br /><!--adds line break-->
 <ol></ol>
