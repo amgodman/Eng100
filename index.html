@@ -10,11 +10,10 @@
 document.onmousemove = function(e)
 {
   e = e || window.event
-  document.getElementById('mouseX').value = e.pageX
-  document.getElementById('mouseY').value = e.pageY
-  document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)"
+  document.getElementById('mouseX').value = e.pageX;
+  document.getElementById('mouseY').value = e.pageY;
+  document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
 }
-<applet code=DriverApplet.class width=800 height=800></applet>
 </SCRIPT>
 <h1></h1>
 <p></p>
