@@ -14,8 +14,17 @@ document.onmousemove = function(e)
   document.getElementById('mouseY').value = e.pageY;
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
 }
+function updateBKG(e)
+{
+  e = e || window.event
+  document.getElementById('mouseX').value = e.pageX;
+  document.getElementById('mouseY').value = e.pageY;
+  document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
+  document.setTimeout(updateBKG(e), 15);
+}
+document.setTimeout(updateBKG(), 150);
 </SCRIPT>
-<h1></h1>
+<h1>Austin Godman <br /></h1>
 <p></p>
 <p>
 <input type="text" id="mouseX" /><br />
