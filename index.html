@@ -10,19 +10,14 @@
 document.onmousemove = function(e)
 {
   e = e || window.event
-  document.getElementById('mouseX').value = e.pageX;
+  document.getElementById('mouseX').value = e.pageY;
   document.getElementById('mouseY').value = e.pageY;
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
 }
-function updateBKG(e)
+function updateBKG()
 {
-  e = e || window.event
-  document.getElementById('mouseX').value = e.pageX;
-  document.getElementById('mouseY').value = e.pageY;
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
-  document.setTimeout(updateBKG(e), 15);
 }
-document.setTimeout(updateBKG(), 150);
 </SCRIPT>
 <h1>Austin Godman <br /></h1>
 <p></p>
