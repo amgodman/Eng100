@@ -2,6 +2,18 @@
 <html>
 <script language = "JavaScript">
 </script>
+<SCRIPT language="JavaScript">
+document.onmousemove=function(e)
+{
+  e = e || window.event
+  document.getElementById('mouseX').value = e.pageX;
+  document.getElementById('mouseY').value = e.pageY;
+  document.getElementById('red').value = 255*mouseX/1600;
+  var green = 255*mouseY/900;
+  var blue = 255;
+  document.bgColor= "rgb((255*mouseX/1600), (255*mouseY/900), 255)";
+}
+</SCRIPT>
 <head>
 <title>Austin Godman </title>
 </head>
@@ -11,8 +23,9 @@
 <p>
 <input type="text" id="mouseX" /><br />
 <input type="text" id="mouseY" /><br />
-<input type="text" id="bgColor" /><br />
-<input type="text" id="bgColor" />
+<input type="text" id="red" /><br />
+<input type="text" id="green" /><br />
+<input type="text" id="blue" />
 </p>
 <br /><!--adds line break-->
 <ol></ol>
@@ -22,13 +35,4 @@
 <LI>
 </ul>
 </body>
-<SCRIPT language="JavaScript">
-document.onmousemove=function(e)
-{
-  e = e || window.event
-  document.getElementById('mouseX').value = e.pageX;
-  document.getElementById('mouseY').value = e.pageY;
-  document.bgColor= "rgb((255*mouseX/1600), (255*mouseY/900), 255)";
-}
-</SCRIPT>
 </html>
