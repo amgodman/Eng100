@@ -6,8 +6,10 @@
 document.onmousemove=function(e)
 {
   e = e || window.event
-  document.getElementById('mouseX').value = e.pageX;
-  document.getElementById('mouseY').value = e.pageY;
+<!--  document.getElementById('mouseX').value = e.pageX;
+  document.getElementById('mouseY').value = e.pageY;-->
+  var mouseX = e.pageX;
+  var mouseY = e.pageY;
   document.getElementById('red').value = 255*"mouseX"/1600;
   document.getElementById('green').value = 255*"mouseY"/900;
   document.getElementById('blue').value = 255;
