@@ -7,7 +7,6 @@
 </head>
 <body>
 <SCRIPT language="JavaScript">
-document
 document.onmousemove = function(e)
 {
   e = e || window.event
@@ -15,6 +14,11 @@ document.onmousemove = function(e)
   document.getElementById('mouseY').value = e.pageY;
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
 }
+function updateBKG()
+{
+  document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
+}
+document.onmousemove=updateBkg();
 </SCRIPT>
 <h1></h1>
 <p></p>
