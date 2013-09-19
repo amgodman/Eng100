@@ -12,7 +12,7 @@ document.onmousemove=function(e)
   document.getElementById('red').value = Math.floor(255*mouseX.value/1600);
   document.getElementById('green').value = Math.floor(255*mouseY.value/900);
   document.getElementById('blue').value = 255;
-  newColor = "rgb(red.value, green.value, 255)";
+  newColor = 'rgb(' + red.value + ',' + green.value + ',' + 255 + ')';
   document.body.style.backgroundColor = newColor<!--"rgb(red.value, green.value, 255)"-->;
 }
 </SCRIPT>
