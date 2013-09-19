@@ -14,17 +14,13 @@ document.onmousemove = function(e)
   document.getElementById('mouseY').value = e.pageY
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)"
 }
-function updateBKG()
-{
-  document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
-}
-document.onmousemove=updateBkg();
 </SCRIPT>
 <h1></h1>
 <p></p>
 <p>
 <input type="text" id="mouseX" /><br />
 <input type="text" id="mouseY" />
+<code>document.bgColor="rgb(mouseX/screen.width, mouseY/screen.height, 255)"</code>
 </p>
 <br /><!--adds line break-->
 <ol></ol>
