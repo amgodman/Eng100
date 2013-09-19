@@ -10,7 +10,6 @@
 document.onmousemove = function(e)
 {
   e = e || window.event
-  fixPageXY(e)
   document.getElementById('mouseX').value = e.pageX
   document.getElementById('mouseY').value = e.pageY
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)"
