@@ -10,13 +10,13 @@
 document.onmousemove = function(e)
 {
   e = e || window.event
-  document.getElementById('mouseX').value = e.pageY;
+  document.getElementById('mouseX').value = e.pageX;
   document.getElementById('mouseY').value = e.pageY;
   document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
 }
 function updateBKG()
 {
-  document.bgColor= "rgb(mouseX/screen.width, mouseY/screen.height, 255)";
+  document.bgColor= "rgb(mouseX*255/screen.width, mouseY*255/screen.height, 255)";
 }
 </SCRIPT>
 <h1>Austin Godman <br /></h1>
