@@ -7,18 +7,18 @@
 </head>
 <body>
 <SCRIPT language="JavaScript">
+document
 document.onmousemove = function(e)
 {
   e = e || window.event
-  document.bgColor = (e.pageX%255, e.pageY%255, 255);
+  document.getElementById('mouseX').value = e.pageX;
+  document.getElementById('mouseY').value = e.pageY;
 }
-body.captureEvents(Event.MOUSEMOVE)
-body.onmousemove=changeBGC;
 </SCRIPT>
 <h1></h1>
 <p></p>
 <p>
-<input onmousemove="this.value=event.clientX+':'+this.value=event.clientY"/>
+<input type="text" id="mouseX" />
 </p>
 <br /><!--adds line break-->
 <ol></ol>
