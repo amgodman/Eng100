@@ -12,11 +12,7 @@ document.onmousemove = function(e)
   e = e || window.event
   document.getElementById('mouseX').value = e.pageX;
   document.getElementById('mouseY').value = e.pageY;
-  document.bgColor= "rgb((255*mouseX/document.width), (255*mouseY/document.height), 255)";
-}
-function updateBKG()
-{
-  document.bgColor= "rgb(mouseX*255/screen.width, mouseY*255/screen.height, 255)";
+  document.bgColor= "rgb((255*mouseX/1600), (255*mouseY/900), 255)";
 }
 </SCRIPT>
 <h1>Austin Godman <br /></h1>
