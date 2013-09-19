@@ -11,10 +11,10 @@ function changeBGC(evt)
 {
   mouseX = evt.pageX;
   mouseY = evt.pageY;
-  body.bgColor = (mouseX%255, mouseY%255, 255);
+  bgColor = (mouseX%255, mouseY%255, 255);
 }
-document.captureEvents(Event.MOUSEMOVE)
-document.onmousemove=changeBGC;
+body.captureEvents(Event.MOUSEMOVE)
+body.onmousemove=changeBGC;
 </SCRIPT>
 <h1></h1>
 <p></p>
