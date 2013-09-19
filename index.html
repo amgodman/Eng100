@@ -1,9 +1,16 @@
 <!DOCtype>
 <html>
+function changeBGC(evt)
+{
+  mouseX = evt.pageX;
+  mouseY = evt.pageY;
+  bgColor = (mouseX%255, mouseY%255, 255);
+}
 <head>
 <title>Austin Godman </title>
 </head>
 <body>
+document.onmousemove = changeBGC;
 <h1></h1>
 <p></p>
 <br /><!--adds line break-->
