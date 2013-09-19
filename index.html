@@ -7,11 +7,10 @@
 </head>
 <body>
 <SCRIPT language="JavaScript">
-function changeBGC(evt)
+document.onmousemove = function(e)
 {
-  mouseX = evt.pageX;
-  mouseY = evt.pageY;
-  bgColor = (mouseX%255, mouseY%255, 255);
+  e = e || window.event
+  bgColor = (e.pageX%255, e.pageY%255, 255);
 }
 body.captureEvents(Event.MOUSEMOVE)
 body.onmousemove=changeBGC;
