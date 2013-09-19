@@ -13,6 +13,7 @@ document.onmousemove = function(e)
   e = e || window.event
   document.getElementById('mouseX').value = e.pageX;
   document.getElementById('mouseY').value = e.pageY;
+  document.bgColor = rgb(mouseX/screen.width, mouseY/screen.height, 255);
 }
 </SCRIPT>
 <h1></h1>
@@ -21,7 +22,6 @@ document.onmousemove = function(e)
 <input type="text" id="mouseX" /><br />
 <input type="text" id="mouseY" />
 </p>
-document.bgColor = rgb(mouseX/screen.width, mouseY/screen.height, 255);
 <br /><!--adds line break-->
 <ol></ol>
 <ul bulletType = 2>
