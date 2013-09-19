@@ -4,12 +4,6 @@
 </script>
 <SCRIPT language="JavaScript">
 var newColor;
-var x = 1600*Math.random();
-vary y = 900*Math.random();
-var ballr = Math.floor(255*x/1600);
-var ballg = Math.floor(255*y/900);
-var ballb = 255;
-var context;
 document.onmousemove=function(e)
 {
   e = e || window.event
@@ -36,7 +30,7 @@ document.onmousemove=function(e)
     <p>
     <input type="text" id="mouseX" /><br />
     <input type="text" id="mouseY" /><br />
-    <input type="text" id="x" /><br />
+    <input type="text" id="red" /><br />
     <input type="text" id="green" /><br />
     <input type="text" id="blue" />
     </p>
