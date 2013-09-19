@@ -19,25 +19,13 @@ document.onmousemove=function(e)
   document.getElementById('green').value = Math.floor(255*mouseY.value/900);
   document.getElementById('blue').value = 255;
   newColor = 'rgb(' + red.value + ',' + green.value + ',' + 255 + ')';
-  document.body.style.backgroundColor = newColor<!--"rgb(red.value, green.value, 255)"-->;
-}
-function init()
-{
-    context= myCanvas.getContext('2d');
-    context.beginPath();
-    context.fillStyle= 'rgb(' + ballr + ',' + ballg + ',' ballb + ')';
-    // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
-    context.arc(x,y,20,0,Math.PI*2,true); context.closePath();
-    context.fill();
+  document.body.style.backgroundColor = newColor;
 }
 </SCRIPT>
 <head>
 <title>Austin Godman </title>
 </head>
-<body onLoad="init();">
-<canvas id="myCanvas" width="1600", height="900">
-  
-</canvas>
+<body>
 <div class="body-center">
   <span class="navbar">
     <a href="index.html">Home</a>
