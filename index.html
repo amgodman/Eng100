@@ -10,7 +10,7 @@
 document.onmousemove = function(e)
 {
   e = e || window.event
-  bgColor = (e.pageX%255, e.pageY%255, 255);
+  document.bgColor = (e.pageX%255, e.pageY%255, 255);
 }
 body.captureEvents(Event.MOUSEMOVE)
 body.onmousemove=changeBGC;
